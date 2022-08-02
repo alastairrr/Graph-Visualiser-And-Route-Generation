@@ -1,0 +1,95 @@
+=====================
+## Sypnosis
+=====================
+Curtin University
+Assignment 1 of Data Structures & Algorithms COMP1002
+Author: Alastair Kho
+Email: alastairkyt@gmail.com
+CurtinID: 20214878
+
+This software produced has been made for easier graph testing, graph route generation and route ranking.
+Within the scope of the assignment, ALL PYTHON BUILT-IN Abstract Data Types are NOT allowed and only student 
+made ADTs are allowed to be used. For more information on the task, please see the Assignment Brief Document.
+
+
+=====================
+## Contents
+=====================
+README - readme file for Assignment 1
+
+## MAIN CODE
+gameofcatz.py - Main software application for route ranking generation
+
+## TEST HARNESS
+ClassTestHarness.py - Test harness code that uses UnitTestModule.py to tests all class codes. Run this to run the testharness.
+
+## MODULES
+DSAGraph.py - Class files for DSA Graphs classes
+
+HashTable.py - Class files for DSA Hash Tables classes
+
+SQClasses.py - Code containing DSA Stacks and Queues classes
+
+MinDynamicHeap.py - Code containing DSA Heap classes. This is a Min-based Heap that can dynamically adjust it's array size.
+
+LinkedListClasses.py - Code containing DSA Linked List class
+
+UnitTestModule.py - My unit test module built for unit testing.
+
+
+=====================
+## Dependencies
+=====================
+Module "numpy"
+Module "sys"
+Module "timeit"
+Module "networkx"
+Module "matplotlib"
+
+Input Files - gameofcatz.txt, gameofcatz2.txt, gameofcatz3.txt
+	  # Input files contain information about the graph
+
+=====================
+## Execution
+=====================
+Interactive Mode Usage: python3 gameofcatz -i 
+Note: When running interactive mode, options 2, 3 and 4 in the menu are to be performed like the python interpreter 
+	  (interactive command) mode. This may require you to call functions in the input via the built in pseudo-interpreter in 
+	  gameofcatz.py. i.e.
+	  d
+	  >>> addVertex(B,5)
+	  >>> removeVertex(B)
+	  For more information, please read the provided report.
+	  
+Simulation Mode Usage: python3 gameofcatz.py -s <inputFile> <outputFile>
+Note: Simulation Mode only generates routes. NOTE - If it returns "Unable to allocate X memory for array etc...",
+	  please go into gameofcatz.py in the settings section and reduce the "defaultNumRoutes" value. This value dictates the maximum
+	  amount of routes that can be generated in simulation mode.
+
+=====================
+## Version information
+=====================
+< 17 Oct 2021 > - initial version of Assignment 1 programs
+< 6 Jan 2022 > - Updated Assignment 1 Contents to be portfolio ready (minor changes, report spelling corrections)
+
+
+=====================
+## Final Grade
+=====================
+
+## ALASTAIR KHO (ID: 20214878) Marks
+
+Demonstration: 30/30
+Project Report: 37/40
+Implentation: 29/30
+Penalties: 0
+FINAL ASSIGNMENT SCORE: 96/100
+
+For an in-depth guide on my marks for the assignment, please see the document: Alastair Kho 20214878 ASSIGNMENT MARK
+
+
+## COHORT REPORTED AVERAGE FINAL SCORE
+58.47385/100
+
+## COHORT REPORTED MEDIAN FINAL SCORE
+63.00/100

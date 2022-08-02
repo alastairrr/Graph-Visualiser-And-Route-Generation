@@ -1,0 +1,69 @@
+# comment line that can be ignored
+#
+# File format:
+#
+# Node label code
+# Edge label label code
+# Ncode code weight
+# Ecode code weight
+# Start label
+# Target label
+#
+# Node types F=food, D=dog, T=toy, - has no impact/empty
+Ncode F -1
+Ncode D 100
+Ncode T 1
+Ncode - 0
+# Define nodes and labels
+Node A -
+Node B T
+Node C -
+Node D -
+Node E -
+Node F -
+Node G F
+Node H D
+Node I F
+Node J -
+# Edge types - is a standard 1 unit per edge
+Ecode - 1
+# Define edges
+Edge A B -
+Edge A E -
+Edge B A -
+Edge B E -
+Edge B F -
+Edge B C -
+Edge C B -
+Edge C F -
+Edge C G -
+Edge C D -
+Edge D C -
+Edge D G -
+Edge E A -
+Edge E B -
+Edge E F -
+Edge E H -
+Edge F B -
+Edge F C -
+Edge F E -
+Edge F G -
+Edge F H -
+Edge F I -
+Edge G C -
+Edge G D -
+Edge G F -
+Edge G I -
+Edge H E -
+Edge H F -
+Edge H I -
+Edge H J -
+Edge I F -
+Edge I G -
+Edge I H -
+Edge I J -
+Edge J I -
+Edge J H -
+# Define Start and Target(s)
+Start A
+Target J

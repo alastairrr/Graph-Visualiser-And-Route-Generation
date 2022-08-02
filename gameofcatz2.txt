@@ -1,0 +1,136 @@
+# comment line that can be ignored
+#
+# File format:
+#
+# Node label code
+# Edge label label code
+# Ncode code weight
+# Ecode code weight
+# Start label
+# Target label
+#
+# Node types F=food, D=dog, T=toy, H=human, B=box, - has no impact/empty
+Ncode F -3
+Ncode D 100
+Ncode T 1
+Ncode - 0
+Ncode H 2
+Ncode B 3
+# Define nodes and labels
+Node A -
+Node B T
+Node C H
+Node D T
+Node E -
+Node F F
+Node G D
+Node H H
+Node I D
+Node J T
+Node K -
+Node L F
+Node M D
+Node N F
+Node O -
+Node P -
+Node Q B
+Node R B
+Node S B
+Node T B
+Node U -
+# Edge types - is a standard 1 unit per edge
+Ecode - 1
+# Define edges
+Edge A B -
+Edge A E -
+Edge B A -
+Edge B E -
+Edge B F -
+Edge B C -
+Edge C B -
+Edge C F -
+Edge C G -
+Edge C D -
+Edge D C -
+Edge D G -
+Edge E A -
+Edge E B -
+Edge E F -
+Edge E H -
+Edge F B -
+Edge F C -
+Edge F E -
+Edge F G -
+Edge F H -
+Edge F I -
+Edge G C -
+Edge G D -
+Edge G F -
+Edge G I -
+Edge H E -
+Edge H F -
+Edge H I -
+Edge H J -
+Edge I F -
+Edge I G -
+Edge I H -
+Edge I J -
+Edge J I -
+Edge J H -
+Edge J K -
+Edge J L -
+Edge K J -
+Edge L J -
+Edge L I -
+Edge I L -
+Edge I M -
+Edge M I -
+Edge M G -
+Edge G M -
+Edge N G -
+Edge G N -
+Edge N D -
+Edge D N -
+Edge D O -
+Edge O D -
+Edge K L -
+Edge L K -
+Edge L M -
+Edge M L -
+Edge M N -
+Edge N M -
+Edge N O -
+Edge O N -
+Edge P K -
+Edge K P -
+Edge K Q -
+Edge Q K -
+Edge Q L -
+Edge L Q -
+Edge L R -
+Edge R L -
+Edge R M -
+Edge M R -
+Edge M S -
+Edge S M -
+Edge S N -
+Edge N S -
+Edge N T -
+Edge T N -
+Edge T O -
+Edge O T -
+Edge O U -
+Edge U O -
+Edge P Q -
+Edge Q P -
+Edge Q R -
+Edge R Q -
+Edge R S -
+Edge S R -
+Edge S T -
+Edge T S -
+Edge T U -
+Edge U T -
+# Define Start and Target(s)
+Start P
+Target U

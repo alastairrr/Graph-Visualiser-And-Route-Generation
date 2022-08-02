@@ -1,0 +1,195 @@
+# Game of Catz 3   
+# Node types W=window, T=toy, F=food, D=dog, S=sofa, t=table, B=bed, C=counter   
+Ncode - 0   
+Ncode W 2   
+Ncode T 3   
+Ncode F -5   
+Ncode D 10   
+Ncode S 4   
+Ncode t 0   
+Ncode B 4   
+Ncode C 0   
+# Define Nodes and Labels   
+Node 1 - 
+Node 2 - 
+Node 3 - 
+Node 4 W 
+Node 5 - 
+Node 6 - 
+Node 7 - 
+Node 8 S 
+Node 9 - 
+Node 10 S 
+Node 11 T 
+Node 12 - 
+Node 13 S 
+Node 14 S 
+Node 15 S 
+Node 16 - 
+Node 17 - 
+Node 18 - 
+Node 19 B 
+Node 20 B 
+Node 21 - 
+Node 22 T 
+Node 23 - 
+Node 24 B 
+Node 25 B 
+Node 26 - 
+Node 27 - 
+Node 28 C 
+Node 29 C 
+Node 30 C 
+Node 31 T 
+Node 32 - 
+Node 33 D 
+Node 34 - 
+Node 35 C 
+Node 36 F 
+Node 37 D 
+Node 38 t 
+Node 39 t 
+Node 40 F 
+Node 41 - 
+Node 42 - 
+Node 43 t 
+Node 44 t 
+Node 45 - 
+# Edge types, - = 1, J = JUMP (2), H=HIGHJUMP (3), D = DROP (1)   
+Ecode - 1   
+Ecode J 2   
+Ecode H 3   
+Ecode D 1   
+# Define edges   
+Edge 1 2 -
+Edge 2 3 -
+Edge 3 4 -
+Edge 4 5 -
+Edge 2 1 -
+Edge 3 2 -
+Edge 4 3 -
+Edge 5 4 -
+Edge 3 8 J
+Edge 4 9 -
+Edge 5 10 J
+Edge 8 3 D
+Edge 9 4 -
+Edge 10 5 D
+Edge 8 9 D
+Edge 9 10 J
+Edge 9 8 J
+Edge 10 9 D
+Edge 8 13 -
+Edge 9 14 J
+Edge 10 15 -
+Edge 13 8 -
+Edge 14 9 D
+Edge 15 10 -
+Edge 13 14 -
+Edge 14 13 -
+Edge 14 15 -
+Edge 15 14 -
+Edge 1 6 -
+Edge 6 1 -
+Edge 7 2 -
+Edge 2 7 -
+Edge 6 7 -
+Edge 7 6 -
+Edge 6 11 -
+Edge 11 6 -
+Edge 7 12 -
+Edge 12 7 -
+Edge 11 12 -
+Edge 12 11 -
+Edge 11 16 -
+Edge 16 11 -
+Edge 12 17 -
+Edge 17 12 -
+Edge 16 17 -
+Edge 17 16 -
+Edge 21 16 -
+Edge 16 21 -
+Edge 17 22 -
+Edge 22 17 -
+Edge 21 22 -
+Edge 22 21 -
+Edge 21 26 -
+Edge 26 21 -
+Edge 27 22 -
+Edge 22 27 -
+Edge 26 27 -
+Edge 27 26 -
+Edge 26 31 -
+Edge 31 26 -
+Edge 27 32 -
+Edge 32 27 -
+Edge 31 32 -
+Edge 32 31 -
+Edge 22 23 -
+Edge 23 22 -
+Edge 23 18 -
+Edge 18 23 -
+Edge 23 24 J
+Edge 24 23 D
+Edge 18 19 J
+Edge 19 18 D
+Edge 24 19 -
+Edge 19 24 -
+Edge 19 20 -
+Edge 20 19 -
+Edge 24 25 -
+Edge 25 24 -
+Edge 20 25 -
+Edge 25 20 -
+Edge 32 33 -
+Edge 33 32 -
+Edge 33 28 H
+Edge 28 33 D
+Edge 33 34 -
+Edge 34 33 -
+Edge 28 29 -
+Edge 29 28 -
+Edge 34 29 H
+Edge 29 34 D
+Edge 29 30 -
+Edge 30 29 -
+Edge 34 35 H
+Edge 35 34 D
+Edge 30 35 -
+Edge 35 30 -
+Edge 32 37 -
+Edge 37 32 -
+Edge 33 38 H
+Edge 38 33 D
+Edge 34 39 H
+Edge 39 34 D
+Edge 40 35 H
+Edge 35 40 D
+Edge 37 38 H
+Edge 38 37 D
+Edge 38 39 -
+Edge 39 38 -
+Edge 39 40 D
+Edge 40 39 H
+Edge 37 42 -
+Edge 42 37 -
+Edge 38 43 -
+Edge 43 38 -
+Edge 39 44 -
+Edge 44 39 -
+Edge 40 45 -
+Edge 45 40 -
+Edge 36 41 D
+Edge 41 36 H
+Edge 41 42 -
+Edge 42 41 -
+Edge 42 43 H
+Edge 43 42 D
+Edge 43 44 -
+Edge 44 43 -
+Edge 44 45 D
+Edge 45 44 H
+# Define Start and Target(s)
+Start 15
+Target 36
+Target 40
