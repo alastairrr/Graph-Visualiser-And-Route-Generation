@@ -4,7 +4,6 @@
 Curtin University
 Assignment 1 of Data Structures & Algorithms COMP1002
 Author: Alastair Kho
-Email: alastairkyt@gmail.com
 CurtinID: 20214878
 
 This software produced has been made for easier graph testing, graph route generation and route ranking.
@@ -79,17 +78,4 @@ Note: Simulation Mode only generates routes. NOTE - If it returns "Unable to all
 
 ## ALASTAIR KHO (ID: 20214878) Marks
 
-Demonstration: 30/30
-Project Report: 37/40
-Implentation: 29/30
-Penalties: 0
 FINAL ASSIGNMENT SCORE: 96/100
-
-For an in-depth guide on my marks for the assignment, please see the document: Alastair Kho 20214878 ASSIGNMENT MARK
-
-
-## COHORT REPORTED AVERAGE FINAL SCORE
-58.47385/100
-
-## COHORT REPORTED MEDIAN FINAL SCORE
-63.00/100
